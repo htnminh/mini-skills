@@ -12,7 +12,7 @@ Follow these instructions as the coding agent currently talking to the user.
 
 ## Bundled skills
 
-Fetch these source files:
+Install from these source files:
 
 - `commit-push`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/commit-push/SKILL.md
 - `handoff`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/handoff/SKILL.md
@@ -24,18 +24,12 @@ Each bundled skill intentionally contains only the portable `name` and `descript
 ## Installation procedure
 
 1. Identify the current harness and its canonical user-level skills directory.
-2. Inventory every user-level and project-level skill location that this harness currently loads. Read existing skill names and descriptions before changing anything.
-3. Fetch all four bundled source files as text. Do not execute remote scripts.
-4. Classify each bundled skill:
-   - **Already installed:** the same skill and content already exist. Skip it.
-   - **Name conflict:** the same name exists with different content. Do not overwrite it.
-   - **Semantic overlap:** a differently named existing skill performs substantially the same job. Do not install the bundled skill yet.
-   - **Clear to install:** no name conflict or meaningful overlap exists.
-5. Install only skills classified as clear:
-   - Create `<skills-directory>/<skill-name>/` when needed.
-   - Save the fetched file as `SKILL.md`.
-6. Do not delete, rename, overwrite, or merge any existing skill during this pass.
-7. Report which skills were installed, already present, or held back because of overlap.
+2. For each bundled skill, check whether the harness currently loads a skill with the exact same name. Do not inventory or read unrelated skills.
+3. Classify and handle each bundled skill:
+   - **Clear:** If no same-name skill exists, create `<skills-directory>/<skill-name>/` and use `curl -fsSL <source-url> -o <skills-directory>/<skill-name>/SKILL.md` to download it directly. Do not rewrite or modify the downloaded file.
+   - **Already installed:** If a same-name skill exists, download the bundled source to a temporary file and read and compare both files. If their contents are identical, keep the existing skill unchanged.
+   - **Name conflict:** If the same-name files differ, keep the existing skill unchanged and do not install the bundled version.
+4. Report the installed skills, already installed skills, and name conflicts briefly. Omit empty categories.
 
 ## Related maintained skills
 
@@ -58,15 +52,14 @@ The external files may contain metadata specific to their authors' preferred har
 
 ## Finish with one question
 
-After installing every clear bundled skill, present:
+After reporting the bundled-skill results, always present the optional maintained skills above and ask whether the user wants to install any of them.
 
-1. Installed skills.
-2. Skills skipped because they were already present.
-3. Every conflict or semantic overlap, showing the existing skill and the Mini Skills alternative.
-4. The optional maintained skills above.
+If any name conflicts were found, include resolving them in the same question:
 
-Then ask one consolidated question:
+> Do you want me to resolve any of these name conflicts or install any of the optional maintained skills? I will not replace or adapt anything without your approval.
 
-> Do you want me to resolve any overlaps or install any of the optional maintained skills? I will not replace or adapt anything without your approval.
+If there are no name conflicts, ask:
 
-If the user approves a replacement or external installation, inspect it again, explain the exact change, and modify only the current harness.
+> Do you want me to install any of the optional maintained skills? I will not adapt anything without your approval.
+
+If the user approves resolving a conflict or installing an external skill, inspect the selected files again, explain the exact change, and modify only the current harness.

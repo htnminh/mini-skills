@@ -19,7 +19,7 @@ Mini Skills is deliberately not an agent framework. It has no runtime, hooks, sc
 - One Markdown file per skill.
 - No hidden dependencies.
 - Install only what you want.
-- Existing or overlapping skills are never replaced automatically.
+- Existing skills are never overwritten automatically.
 - Stronger maintained skills are linked instead of repackaged.
 
 ## Install
