@@ -1,6 +1,6 @@
 # Mini Skills
 
-Four small, focused skills for coding agents. Each does one job, lives in one readable `SKILL.md`, and can be installed independently.
+Small, focused skills for coding agents. Each does one job, lives in one readable `SKILL.md`, and can be installed independently.
 
 Mini Skills is deliberately not an agent framework. It has no runtime, hooks, scripts, background services, or required companion agents. The skills use only `name` and `description` frontmatter so they remain useful across different coding harnesses.
 
@@ -10,6 +10,7 @@ Mini Skills is deliberately not an agent framework. It has no runtime, hooks, sc
 |---|---|---|
 | [commit-push](./skills/commit-push/SKILL.md) | Reviews the working tree, creates a Conventional Commit, and pushes safely. | You want to ship all current changes without repeating the Git ceremony. |
 | [handoff](./skills/handoff/SKILL.md) | Writes a secure, resumable conversation handoff into the operating system's temporary directory. | You want another session, agent, or harness to continue without rediscovering context. |
+| [orchestrate](./skills/orchestrate/SKILL.md) | Routes coding work across implementation, exploration, lightweight analysis, and final-review agents. | You explicitly want coordinated sub-agents for a coding task. |
 | [question](./skills/question/SKILL.md) | Keeps a turn strictly read-only. | You want investigation, explanation, or debugging analysis without surprise implementation. |
 | [verify-brainstorm](./skills/verify-brainstorm/SKILL.md) | Checks whether the premise is sound before generating and comparing options. | You want to think through a problem or decision before anyone starts building. |
 

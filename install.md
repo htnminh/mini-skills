@@ -16,10 +16,13 @@ Install from these source files:
 
 - `commit-push`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/commit-push/SKILL.md
 - `handoff`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/handoff/SKILL.md
+- `orchestrate`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/orchestrate/SKILL.md
 - `question`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/question/SKILL.md
 - `verify-brainstorm`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/verify-brainstorm/SKILL.md
 
 Each bundled skill intentionally contains only the portable `name` and `description` frontmatter fields. Preserve the files exactly. Do not add harness-specific metadata.
+
+`orchestrate` is Codex-specific. On a non-Codex harness, read its source before installation and adapt the model and sub-agent names to supported equivalents. Show the proposed edits and obtain approval before installing. Do not read other bundled skills unless a same-name comparison requires it.
 
 ## Installation procedure
 
@@ -29,7 +32,8 @@ Each bundled skill intentionally contains only the portable `name` and `descript
    - **Clear:** If no same-name skill exists, create `<skills-directory>/<skill-name>/` and use `curl -fsSL <source-url> -o <skills-directory>/<skill-name>/SKILL.md` to download it directly. Do not rewrite or modify the downloaded file.
    - **Already installed:** If a same-name skill exists, download the bundled source to a temporary file and read and compare both files. If their contents are identical, keep the existing skill unchanged.
    - **Name conflict:** If the same-name files differ, keep the existing skill unchanged and do not install the bundled version.
-4. Report the installed skills, already installed skills, and name conflicts briefly. Omit empty categories.
+   - **Harness adaptation needed:** Apply this only to `orchestrate` on a non-Codex harness. Keep it uninstalled until the user approves the proposed adaptation, then install only the approved adapted version.
+4. Report the installed skills, already installed skills, name conflicts, and any harness adaptation needed briefly. Omit empty categories.
 
 ## Related maintained skills
 
@@ -54,12 +58,12 @@ The external files may contain metadata specific to their authors' preferred har
 
 After reporting the bundled-skill results, always present the optional maintained skills above and ask whether the user wants to install any of them.
 
-If any name conflicts were found, include resolving them in the same question:
+If any name conflicts or harness adaptations were found, include resolving them in the same question:
 
-> Do you want me to resolve any of these name conflicts or install any of the optional maintained skills? I will not replace or adapt anything without your approval.
+> Do you want me to resolve any of these name conflicts, apply the proposed `orchestrate` adaptation, or install any of the optional maintained skills? I will not replace or adapt anything without your approval.
 
-If there are no name conflicts, ask:
+If there are no name conflicts or harness adaptations, ask:
 
 > Do you want me to install any of the optional maintained skills? I will not adapt anything without your approval.
 
-If the user approves resolving a conflict or installing an external skill, inspect the selected files again, explain the exact change, and modify only the current harness.
+If the user approves resolving a conflict, adapting `orchestrate`, or installing an external skill, inspect the selected files again, explain the exact change, and modify only the current harness.
