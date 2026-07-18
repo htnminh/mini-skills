@@ -43,14 +43,10 @@ These are not bundled or installed automatically:
   - Repository: https://github.com/JuliusBrussee/caveman
   - Source: https://raw.githubusercontent.com/JuliusBrussee/caveman/main/skills/caveman/SKILL.md
   - Use it for persistent, token-efficient responses.
-- **Grill Me by Matt Pocock**
+- **Grilling by Matt Pocock**
   - Repository: https://github.com/mattpocock/skills
-  - Front door: https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/grill-me/SKILL.md
-  - Required primitive: https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/grilling/SKILL.md
-  - Install both `grill-me` and `grilling` if the user selects this option.
-- **Handoff by Matt Pocock**
-  - Source: https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/handoff/SKILL.md
-  - This inspired Mini Skills' `handoff`, but the two should be treated as overlapping alternatives.
+  - Source: https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/grilling/SKILL.md
+  - Install `grilling` if the user selects this option.
 
 The external files may contain metadata specific to their authors' preferred harnesses. Do not rewrite or install them without showing the user what will be adapted for the current harness.
 

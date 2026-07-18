@@ -38,7 +38,7 @@ You can review the instructions first in [install.md](./install.md).
 Mini Skills intentionally does not bundle these excellent maintained skills:
 
 - [Caveman by Julius Brussee](https://github.com/JuliusBrussee/caveman) keeps agent responses terse without sacrificing technical meaning.
-- [Grill Me by Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me), together with its shared [Grilling](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling) primitive, pressure-tests plans one decision at a time.
+- [Grilling by Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling) pressure-tests plans one decision at a time.
 
 Inspired by [Matt Pocock's handoff skill](https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md); this version was independently expanded around secure, cross-harness continuation.
 
