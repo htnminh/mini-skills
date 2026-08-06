@@ -23,7 +23,7 @@ Install from these source files:
 
 Each bundled skill intentionally contains only the portable `name` and `description` frontmatter fields. Preserve the files exactly. Do not add harness-specific metadata.
 
-`orchestrate` is Codex-specific. On a non-Codex harness, read its source before installation and adapt the model and sub-agent names to supported equivalents. Show the proposed edits and obtain approval before installing. Do not read other bundled skills unless a same-name comparison requires it.
+`orchestrate` is Codex-specific. On a non-Codex harness, read its source and prepare an adaptation of the model and sub-agent names to supported equivalents. Offer the adaptation in the closing question and install only the approved adapted version. Do not read other bundled skills unless a same-name comparison requires it.
 
 ## Installation procedure
 
@@ -49,18 +49,18 @@ These are not bundled or installed automatically:
   - Source: https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/grilling/SKILL.md
   - Install `grilling` if the user selects this option.
 
-The external files may contain metadata specific to their authors' preferred harnesses. Do not rewrite or install them without showing the user what will be adapted for the current harness.
+The external files may contain metadata specific to their authors' preferred harnesses. If a same-name skill is already installed, fetch the source and compare so the closing question can offer an update. Do not install or rewrite them until the user selects them in the closing question, noting any adaptation for the current harness in the option.
 
-## Finish with one question
+## Finish with one closing question
 
-After reporting the bundled-skill results, always present the optional maintained skills above and ask whether the user wants to install any of them.
+Fetching and reading remote source files is read-only and safe — do it whenever needed to prepare or carry out the options below, without asking first. Only creating or modifying skills requires the user's selection.
 
-If any name conflicts or harness adaptations were found, include resolving them in the same question:
+After reporting the bundled-skill results, ask a single multiple-choice question covering every pending decision — use the harness's interactive question tool with multiple selection if available, otherwise plain text. Each pending item is one short do-or-not-do option:
 
-> Do you want me to resolve any of these name conflicts, apply the proposed `orchestrate` adaptation, or install any of the optional maintained skills? I will not replace or adapt anything without your approval.
+> Do you want to:
+> - Install `orchestrate` with the proposed adaptation? My recommendation: <sub-agent names + model names>
+> - Update `commit-push` to the bundled version?
+> - Install `grilling`?
+> - Update `caveman`?
 
-If there are no name conflicts or harness adaptations, ask:
-
-> Do you want me to install any of the optional maintained skills? I will not adapt anything without your approval.
-
-If the user approves resolving a conflict, adapting `orchestrate`, or installing an external skill, inspect the selected files again, explain the exact change, and modify only the current harness.
+Build the list from whatever applies: one option per harness adaptation (state the concrete recommendation inline), one per name conflict, and one per maintained skill that is uninstalled or outdated. Omit options that do not apply. After the user answers, apply exactly the selected options and nothing else.
