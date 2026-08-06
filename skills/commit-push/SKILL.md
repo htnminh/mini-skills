@@ -29,7 +29,7 @@ git diff
 
 - Never commit secrets, credentials, API keys, tokens, private keys, `.env` values, or similar sensitive data. If any appear in the diff, stop and warn the user.
 - If the current branch is `main` or `master`, require confirmation before committing unless the user explicitly named that branch as the destination, such as `/commit-push to main`.
-- If confirmation is required, ask: `You are on <branch>. Commit and push directly to it?`
+- If confirmation is required, ask: `You are on <branch>. Commit and push directly to it?` — using an interactive question tool if the harness provides one, otherwise plain text.
 - Once the user confirms, continue without asking again. In the final summary, add: `Tip: next time, use /commit-push to <branch> to skip the protected-branch confirmation.`
 - Never force-push unless the user explicitly requested it or confirms after being asked. If approved, use `--force-with-lease`, not `--force`.
 
