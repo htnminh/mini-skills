@@ -19,6 +19,7 @@ Install from these source files:
 - `orchestrate`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/orchestrate/SKILL.md
 - `question`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/question/SKILL.md
 - `verify-brainstorm`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/verify-brainstorm/SKILL.md
+- `wait-what`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/wait-what/SKILL.md
 
 Each bundled skill intentionally contains only the portable `name` and `description` frontmatter fields. Preserve the files exactly. Do not add harness-specific metadata.
 

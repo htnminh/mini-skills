@@ -13,6 +13,7 @@ Mini Skills is deliberately not an agent framework. It has no runtime, hooks, sc
 | [orchestrate](./skills/orchestrate/SKILL.md) | Routes coding work across implementation, exploration, lightweight analysis, and final-review agents. | You explicitly want coordinated sub-agents for a coding task. |
 | [question](./skills/question/SKILL.md) | Keeps a turn strictly read-only. | You want investigation, explanation, or debugging analysis without surprise implementation. |
 | [verify-brainstorm](./skills/verify-brainstorm/SKILL.md) | Checks whether the premise is sound before generating and comparing options. | You want to think through a problem or decision before anyone starts building. |
+| [wait-what](./skills/wait-what/SKILL.md) | Re-explains the previous message in Simplified Technical English using the project's own terminology. | The agent's last message did not land and you want it re-pitched clearly. |
 
 ## Why mini?
 
@@ -35,14 +36,12 @@ You can review the instructions first in [install.md](./install.md).
 
 ## Related skills and inspiration
 
-Mini Skills intentionally does not bundle these excellent maintained skills:
+These maintained skills are not bundled; the installer asks whether you also want to install them:
 
 - [Caveman by Julius Brussee](https://github.com/JuliusBrussee/caveman) keeps agent responses terse without sacrificing technical meaning.
 - [Grilling by Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling) pressure-tests plans one decision at a time.
 
-Inspired by [Matt Pocock's handoff skill](https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md); this version was independently expanded around secure, cross-harness continuation.
-
-Massive respect to both authors for publishing the ideas that helped shape this collection.
+Two bundled skills started from Matt Pocock's work: `handoff` was inspired by [his handoff skill](https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md) and independently expanded around secure, cross-harness continuation, and `wait-what` adapts [his wait-what skill](https://github.com/mattpocock/skills/blob/main/skills/productivity/wait-what/SKILL.md) with portable frontmatter only, project-agnostic terminology instead of a repo-specific `CONTEXT.md`, and a self-contained ASD-STE100 reminder. Thanks to both authors.
 
 ## License
 
