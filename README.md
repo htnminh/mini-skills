@@ -15,6 +15,7 @@ Mini Skills is deliberately not an agent framework. It has no runtime, hooks, sc
 | [save-memory](./skills/save-memory/SKILL.md) | Writes durable knowledge into every memory store the harness has, including instruction files. | You want the next session to start with what this one learned instead of rediscovering it. |
 | [verify-brainstorm](./skills/verify-brainstorm/SKILL.md) | Checks whether the premise is sound before generating and comparing options. | You want to think through a problem or decision before anyone starts building. |
 | [wait-what](./skills/wait-what/SKILL.md) | Re-explains the previous message in Simplified Technical English using the project's own terminology. | The agent's last message did not land and you want it re-pitched clearly. |
+| [wrap-up](./skills/wrap-up/SKILL.md) | Closes a session with a persistent chronological audit log, then saves what is worth carrying forward. | You are finishing up and want the session's history kept and its knowledge preserved. |
 
 ## Why mini?
 
