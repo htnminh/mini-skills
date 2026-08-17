@@ -18,6 +18,7 @@ Install from these source files:
 - `handoff`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/handoff/SKILL.md
 - `orchestrate`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/orchestrate/SKILL.md
 - `question`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/question/SKILL.md
+- `save-memory`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/save-memory/SKILL.md
 - `verify-brainstorm`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/verify-brainstorm/SKILL.md
 - `wait-what`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/wait-what/SKILL.md
 

@@ -12,6 +12,7 @@ Mini Skills is deliberately not an agent framework. It has no runtime, hooks, sc
 | [handoff](./skills/handoff/SKILL.md) | Writes a secure, resumable conversation handoff into the operating system's temporary directory. | You want another session, agent, or harness to continue without rediscovering context. |
 | [orchestrate](./skills/orchestrate/SKILL.md) | Routes coding work across implementation, exploration, lightweight analysis, and final-review agents. | You explicitly want coordinated sub-agents for a coding task. |
 | [question](./skills/question/SKILL.md) | Keeps a turn strictly read-only. | You want investigation, explanation, or debugging analysis without surprise implementation. |
+| [save-memory](./skills/save-memory/SKILL.md) | Writes durable knowledge into every memory store the harness has, including instruction files. | You want the next session to start with what this one learned instead of rediscovering it. |
 | [verify-brainstorm](./skills/verify-brainstorm/SKILL.md) | Checks whether the premise is sound before generating and comparing options. | You want to think through a problem or decision before anyone starts building. |
 | [wait-what](./skills/wait-what/SKILL.md) | Re-explains the previous message in Simplified Technical English using the project's own terminology. | The agent's last message did not land and you want it re-pitched clearly. |
 
