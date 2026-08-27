@@ -10,6 +10,7 @@ Mini Skills is deliberately not an agent framework. It has no runtime, hooks, sc
 |---|---|---|
 | [commit-push](./skills/commit-push/SKILL.md) | Reviews the working tree, creates a Conventional Commit, and pushes safely. | You want to ship all current changes without repeating the Git ceremony. |
 | [handoff](./skills/handoff/SKILL.md) | Writes a secure, resumable conversation handoff into the operating system's temporary directory. | You want another session, agent, or harness to continue without rediscovering context. |
+| [learn-by-doing](./skills/learn-by-doing/SKILL.md) | Builds a scratch project and teaches one concept per runnable file, leaving at most 3 lines for you to write. | You want to learn a framework or concept hands-on instead of being handed finished code. |
 | [orchestrate](./skills/orchestrate/SKILL.md) | Routes coding work across implementation, exploration, lightweight analysis, and final-review agents. | You explicitly want coordinated sub-agents for a coding task. |
 | [question](./skills/question/SKILL.md) | Splits the message into tasks and keeps the one it is attached to read-only. | You want one request investigated rather than implemented, without freezing the rest of the message. |
 | [read-only](./skills/read-only/SKILL.md) | Keeps an entire turn strictly read-only, however the message is phrased. | You want investigation only, with no chance of a change slipping through. |
