@@ -53,6 +53,10 @@ These are not bundled or installed automatically:
   - Repository: https://github.com/mattpocock/skills
   - Source: https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/grilling/SKILL.md
   - Install `grilling` if the user selects this option.
+- **Show Me by HumanLayer**
+  - Repository: https://github.com/humanlayer/skills
+  - Source: https://raw.githubusercontent.com/humanlayer/skills/main/plugins/show-me/skills/show-me/SKILL.md
+  - Install `show-me` if the user selects this option.
 
 The external files may contain metadata specific to their authors' preferred harnesses. If a same-name skill is already installed, fetch the source and compare so the closing question can offer an update. Do not install or rewrite them until the user selects them in the closing question, noting any adaptation for the current harness in the option.
 

@@ -45,6 +45,7 @@ These maintained skills are not bundled; the installer asks whether you also wan
 
 - [Caveman by Julius Brussee](https://github.com/JuliusBrussee/caveman) keeps agent responses terse without sacrificing technical meaning.
 - [Grilling by Matt Pocock](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling) pressure-tests plans one decision at a time.
+- [Show Me by HumanLayer](https://github.com/humanlayer/skills/blob/main/plugins/show-me/skills/show-me/SKILL.md) explains the current topic visually with diagrams, code-shape sketches, and focused HTML artifacts.
 
 Two bundled skills started from Matt Pocock's work: `handoff` was inspired by [his handoff skill](https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md) and independently expanded around secure, cross-harness continuation, and `wait-what` adapts [his wait-what skill](https://github.com/mattpocock/skills/blob/main/skills/productivity/wait-what/SKILL.md) with portable frontmatter only, project-agnostic terminology instead of a repo-specific `CONTEXT.md`, and a self-contained ASD-STE100 reminder. Thanks to both authors.
 
