@@ -30,4 +30,5 @@ Ask for the project path, and for the topic if the message does not name one. As
 - Never write more than the concept needs: no error handling, config, tests, or abstraction unless that is the concept.
 - Keep the project runnable at every step.
 - Three lines is the user's maximum per quiz. Everything else is yours.
+- **Hard rule: every quiz TODO must test a concept and/or example already taught and shown to the user in this session** — a single one of them, or a combination of several. NEVER quiz on something not yet taught. If the next quiz needs an untaught concept, teach it first (step 1-3) before quizzing it.
 - When the session ends, list the concepts covered and name the next one.
