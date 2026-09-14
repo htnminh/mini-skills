@@ -18,6 +18,7 @@ Install from these source files:
 - `handoff`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/handoff/SKILL.md
 - `learn-by-doing`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/learn-by-doing/SKILL.md
 - `orchestrate`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/orchestrate/SKILL.md
+- `orchestrate-lite`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/orchestrate-lite/SKILL.md
 - `question`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/question/SKILL.md
 - `read-only`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/read-only/SKILL.md
 - `save-memory`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/save-memory/SKILL.md
