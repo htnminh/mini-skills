@@ -21,6 +21,7 @@ Install from these source files:
 - `orchestrate-lite`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/orchestrate-lite/SKILL.md
 - `question`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/question/SKILL.md
 - `read-only`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/read-only/SKILL.md
+- `run-unattended`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/run-unattended/SKILL.md
 - `save-memory`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/save-memory/SKILL.md
 - `tldr`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/tldr/SKILL.md
 - `tldr-session`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/tldr-session/SKILL.md
