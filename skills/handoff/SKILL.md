@@ -15,7 +15,16 @@ Where:
 
 After creating the file, read that exact file path before writing to it, because the current coding harness requires a file to be read before allowing edits. Then write the handoff document to that file.
 - **The handoff must preserve enough context from the whole conversation for the next agent to continue without losing the thread.**
-- Include the current goal, important decisions, constraints, relevant assumptions, unresolved questions, and any context that would be expensive or risky to rediscover.
+- Use these sections, in this order. Write "None." under an empty section, so every handoff has the same shape and a reader always finds a fact in the same place:
+  1. **Header**: project, branch, date, and the session identifier if the harness exposes one.
+  2. **Goal**: the current goal and its constraints. Quote the user's own words wherever the next agent must not reinterpret them.
+  3. **Decisions**: what was chosen, what it was chosen over, and why.
+  4. **Dead ends**: what was tried and why it failed, so no one tries it again.
+  5. **Current state**: branch, last commit, uncommitted changes, processes or services left running, and files created outside the repository.
+  6. **Open questions**: unresolved questions and assumptions not yet confirmed.
+  7. **Next tasks**: what the next agent should do, following the rule for unclear next tasks below.
+  8. **Notes**: anything else worth keeping that fits no section above.
+- Keep one fact per bullet. Include anything expensive or risky to rediscover; point to files, commits, and diffs instead of copying them.
 - If the user specified what the next session should focus on, emphasize that focus without omitting broader context needed for continuity.
 - When relevant, suggest the skills to be used by the next session. Only mention skills that are likely to be useful for the next session's expected work. If no skills are relevant, omit this section.
 - Do not duplicate content already captured in other artifacts, such as PRDs, plans, ADRs, issues, commits, or diffs. Reference those artifacts by path, URL, commit hash, identifier, or any other durable pointer that lets the next agent find the original source.

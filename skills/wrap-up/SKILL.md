@@ -11,7 +11,11 @@ Close the session in two steps, in this order. Both are required. The `handoff` 
 
   > If the user names a different directory, use it and update the default in this skill directly. If they confirm the default, replace this note with: "The directory above is fixed; do not ask again."
 
-- **Write an audit log, not a briefing for the next task.** Record in chronological order what was done, what was decided and why, what was tried and abandoned, what was left unfinished, and anything else worth recording. Omit handoff's next-tasks section.
+- **Write an audit log, not a briefing for the next task.** Use handoff's sections, with these swaps:
+  - **Goal** becomes **Requests**: each user request as a short quote in the user's own words, one line each.
+  - Add **Chronology** after Requests: numbered steps in the order they happened, each naming the files it touched and the check that proved it worked.
+  - **Current state** becomes **Final state**, and also lists each commit with its hash and subject.
+  - **Next tasks** becomes **Open items**: unfinished work and known defects, each with where it lives.
 
 **2. Save durable knowledge.** Follow the `save-memory` skill as written, with no changes. Keep memory independent of the log: write memory as if the log did not exist, and do not reference it.
 
