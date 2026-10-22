@@ -32,7 +32,7 @@ Install from these source files:
 
 Each bundled skill intentionally contains only the portable `name` and `description` frontmatter fields. Preserve the files exactly. Do not add harness-specific metadata.
 
-`orchestrate` is Codex-specific. On a non-Codex harness, read its source and prepare an adaptation of the model and sub-agent names to supported equivalents. Offer the adaptation in the closing question and install only the approved adapted version. Do not read other bundled skills unless a same-name comparison requires it.
+Do not read bundled skills unless a same-name comparison requires it.
 
 ## Installation procedure
 
@@ -42,8 +42,7 @@ Each bundled skill intentionally contains only the portable `name` and `descript
    - **Clear:** If no same-name skill exists, create `<skills-directory>/<skill-name>/` and use `curl -fsSL <source-url> -o <skills-directory>/<skill-name>/SKILL.md` to download it directly. Do not rewrite or modify the downloaded file.
    - **Already installed:** If a same-name skill exists, download the bundled source to a temporary file and read and compare both files. If their contents are identical, keep the existing skill unchanged.
    - **Name conflict:** If the same-name files differ, keep the existing skill unchanged and do not install the bundled version.
-   - **Harness adaptation needed:** Apply this only to `orchestrate` on a non-Codex harness. Keep it uninstalled until the user approves the proposed adaptation, then install only the approved adapted version.
-4. Report the installed skills, already installed skills, name conflicts, and any harness adaptation needed briefly. Omit empty categories.
+4. Report the installed skills, already installed skills, and name conflicts briefly. Omit empty categories.
 
 ## Related maintained skills
 
@@ -71,9 +70,8 @@ Fetching and reading remote source files is read-only and safe — do it wheneve
 After reporting the bundled-skill results, ask a single multiple-choice question covering every pending decision — use the harness's interactive question tool with multiple selection if available, otherwise plain text. Each pending item is one short do-or-not-do option:
 
 > Do you want to:
-> - Install `orchestrate` with the proposed adaptation? My recommendation: <sub-agent names + model names>
 > - Update `commit-push` to the bundled version?
 > - Install `grilling`?
 > - Update `caveman`?
 
-Build the list from whatever applies: one option per harness adaptation (state the concrete recommendation inline), one per name conflict, and one per maintained skill that is uninstalled or outdated. Omit options that do not apply. After the user answers, apply exactly the selected options and nothing else.
+Build the list from whatever applies: one option per name conflict and one per maintained skill that is uninstalled or outdated. Omit options that do not apply. After the user answers, apply exactly the selected options and nothing else.
