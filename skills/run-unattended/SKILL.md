@@ -42,12 +42,12 @@ Determine the handoff directory without asking:
 2. Otherwise, use the nearest identifiable project root.
 3. If no project root can be identified confidently, use the current working directory and record that fallback in the handoff.
 
-Keep the handoff's normal filename pattern and all of its content, security, and redaction rules. The handoff must clearly distinguish:
+Keep the handoff's normal filename pattern, its sections, and all of its content, security, and redaction rules. Within those sections, clearly distinguish:
 
-- completed and verified work;
-- attempted but unsuccessful work;
-- skipped work and why it was unsafe or out of scope;
-- blockers caused by missing access, credentials, permissions, or external dependencies;
-- remaining recommended work.
+- completed and verified work, under **Current state**;
+- attempted but unsuccessful work, under **Dead ends**;
+- skipped work and why it was unsafe or out of scope, under **Open questions**;
+- blockers caused by missing access, credentials, permissions, or external dependencies, under **Open questions**;
+- remaining recommended work, under **Next tasks**.
 
 Print the wrap-up result first. Then print the handoff skill's required final message and say nothing after it.

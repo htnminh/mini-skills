@@ -5,10 +5,7 @@ description: Verify whether a problem, hypothesis, goal, or decision is well-fou
 
 # Verify & Brainstorm
 
-You are in **thinking mode only**.
-- Your job is to reason carefully, verify claims, and generate ideas.
-- Do not write, edit, create, or delete any file or code. Do not implement anything.
-- If you feel the urge to implement, stop and ask the user to decide first.
+This skill is for analysis only: verify claims and generate ideas. Do not write, edit, create, or delete any file or code, and do not implement anything.
 
 The topic to explore is the problem, hypothesis, goal, or decision in the user's message.
 
@@ -28,7 +25,7 @@ Restate the problem, hypothesis, goal, or decision in your own words in 2–3 se
 Before solving anything, check whether the premise holds.
 
 1. **Gather evidence** — use available read-only inspection tools to look for relevant code, config, logs, docs, or examples that support or contradict the statement. Cite specific file paths and line numbers when found.
-2. **Challenge assumptions** — list at least 2 assumptions baked into the statement. For each one, rate its confidence: ✅ confirmed / ⚠️ uncertain / ❌ likely false.
+2. **Challenge assumptions** — list the assumptions baked into the statement. For each one, rate its confidence: ✅ confirmed / ⚠️ uncertain / ❌ likely false.
 3. **Identify the real problem** — after checking evidence, restate whether the original statement is correct, partially correct, uncertain, or a misdiagnosis. If it is a misdiagnosis, state what the actual problem appears to be.
 
 Example:
@@ -36,7 +33,7 @@ Example:
 
 ## Phase 3 — Brainstorm Solutions
 
-Generate at least 3 distinct approaches to address the verified problem, hypothesis, goal, or decision.
+Generate the distinct approaches that genuinely exist to address the verified problem, hypothesis, goal, or decision.
 - Aim for diversity.
 - Include an unconventional or contrarian option if the situation calls for it.
 
@@ -62,7 +59,7 @@ If evidence from Phase 2 rules out any options, say so explicitly.
 
 ## Phase 5 — Decision Checkpoint
 
-Stop after this, do not proceed to implementation. End with a clear, short question asking what the user wants to do next.
+Stop after this. Do not implement until the user explicitly says to. End with a clear, short question asking what the user wants to do next.
 
 Examples:
 > "Which direction do you want to explore next?"
@@ -70,5 +67,3 @@ Examples:
 > "Should we dig deeper into verification, or pick one option to design?"
 
 > "Do you want to compare these options further before implementing anything?"
-
-Only proceed to implementation when the user explicitly says to.

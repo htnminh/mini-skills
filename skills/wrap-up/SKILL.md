@@ -5,7 +5,7 @@ description: Close out a working session by writing a durable audit log of what 
 
 Close the session in two steps, in this order. Both are required. The `handoff` and `save-memory` skills must both be available; if one is missing, say so and complete the other step anyway.
 
-**1. Write the session log.** Follow the `handoff` skill, with two changes:
+**1. Write the session log.** Follow the `handoff` skill, with three changes:
 
 - **Write to a persistent directory, not a temporary one.** Default to `~/mini-session-history`, creating it if it does not exist. Name the file `YYYY-MM-DD__project-name__session-title.md`, using the current date and handoff's slug rules.
 
@@ -16,6 +16,7 @@ Close the session in two steps, in this order. Both are required. The `handoff` 
   - Add **Chronology** after Requests: numbered steps in the order they happened, each naming the files it touched and the check that proved it worked.
   - **Current state** becomes **Final state**, and also lists each commit with its hash and subject.
   - **Next tasks** becomes **Open items**: unfinished work and known defects, each with where it lives.
+- **Skip handoff's closing message.** Do not print "Conversation successfully handed off"; the closing line at the end of this skill replaces it.
 
 **2. Save durable knowledge.** Follow the `save-memory` skill as written, with no changes. Keep memory independent of the log: write memory as if the log did not exist, and do not reference it.
 
