@@ -7,9 +7,7 @@ Close the session in two steps, in this order. Both are required. The `handoff` 
 
 **1. Write the session log.** Follow the `handoff` skill, with three changes:
 
-- **Write to a persistent directory, not a temporary one.** Default to `~/mini-session-history`, creating it if it does not exist. Name the file `YYYY-MM-DD__project-name__session-title.md`, using the current date and handoff's slug rules.
-
-  > If the user names a different directory, use it and update the default in this skill directly. If they confirm the default, replace this note with: "The directory above is fixed; do not ask again."
+- **Write to a persistent directory, not a temporary one.** Use the user's preferred directory if one is known; otherwise use `~/mini-session-history`, creating it if it does not exist. Name the file `YYYY-MM-DD__project-name__session-title.md`, using the current date and handoff's slug rules.
 
 - **Write an audit log, not a briefing for the next task.** Use handoff's sections, with these swaps:
   - **Goal** becomes **Requests**: each user request as a short quote in the user's own words, one line each.
