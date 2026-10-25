@@ -25,6 +25,7 @@ Install from these source files:
 - `save-memory`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/save-memory/SKILL.md
 - `tldr`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/tldr/SKILL.md
 - `tldr-session`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/tldr-session/SKILL.md
+- `to-chatgpt`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/to-chatgpt/SKILL.md
 - `update-mini-skills`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/update-mini-skills/SKILL.md
 - `verify-brainstorm`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/verify-brainstorm/SKILL.md
 - `wait-what`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/wait-what/SKILL.md
