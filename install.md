@@ -17,6 +17,7 @@ Install from these source files:
 - `commit-push`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/commit-push/SKILL.md
 - `handoff`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/handoff/SKILL.md
 - `learn-by-doing`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/learn-by-doing/SKILL.md
+- `numbered-plan`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/numbered-plan/SKILL.md
 - `orchestrate`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/orchestrate/SKILL.md
 - `orchestrate-lite`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/orchestrate-lite/SKILL.md
 - `question`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/question/SKILL.md
