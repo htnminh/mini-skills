@@ -14,6 +14,7 @@ Mini Skills is deliberately not an agent framework. It has no runtime, hooks, sc
 | [numbered-plan](./skills/numbered-plan/SKILL.md) | Writes each task as one simple sentence in a numbered list. | You want a short, clear plan. |
 | [orchestrate](./skills/orchestrate/SKILL.md) | Routes coding work across engineer, scouter, and reviewer agents. | You explicitly want coordinated sub-agents for a coding task. |
 | [orchestrate-lite](./skills/orchestrate-lite/SKILL.md) | Explores the code, plans, delegates the implementation to one sub-agent, then verifies and fixes the result itself. | You want a code change done under your own plan and review, without a full agent team. |
+| [perfect-plan](./skills/perfect-plan/SKILL.md) | Refines a persistent plan through independent reviews without implementing it. | You want a plan reviewed until no blocking issues remain. |
 | [question](./skills/question/SKILL.md) | Splits the message into tasks and keeps the one it is attached to read-only. | You want one request investigated rather than implemented, without freezing the rest of the message. |
 | [read-only](./skills/read-only/SKILL.md) | Keeps an entire turn strictly read-only, however the message is phrased. | You want investigation only, with no chance of a change slipping through. |
 | [run-unattended](./skills/run-unattended/SKILL.md) | Completes approved work without user interaction, then wraps up and writes a project-root handoff. | You will be absent and want the agent to exhaust safe in-scope work without asking questions. |
