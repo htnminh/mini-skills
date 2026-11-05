@@ -20,6 +20,7 @@ Install from these source files:
 - `numbered-plan`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/numbered-plan/SKILL.md
 - `orchestrate`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/orchestrate/SKILL.md
 - `orchestrate-lite`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/orchestrate-lite/SKILL.md
+- `perfect-plan`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/perfect-plan/SKILL.md
 - `question`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/question/SKILL.md
 - `read-only`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/read-only/SKILL.md
 - `run-unattended`: https://raw.githubusercontent.com/htnminh/mini-skills/main/skills/run-unattended/SKILL.md
